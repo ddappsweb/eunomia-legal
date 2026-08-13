@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy Eunomia</title>
+<style>
+  :root {
+    --bg: #f2f0ea;
+    --surface: #ffffff;
+    --ink: #1f1b16;
+    --muted: #6b6458;
+    --border: #ddd6c7;
+    --accent: #9c7a26;
+    --accent-ink: #5c4718;
+    --todo-bg: #fbefd8;
+    --todo-border: #d8b978;
+    --todo-ink: #6b4f14;
+    --badge-bg: #efe4c8;
+    --badge-ink: #7a5c1c;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #080811;
+      --surface: #121220;
+      --ink: #ede9e0;
+      --muted: #9f9aac;
+      --border: #26243a;
+      --accent: #d4af6a;
+      --accent-ink: #e8c98a;
+      --todo-bg: #241c0e;
+      --todo-border: #6b4f1e;
+      --todo-ink: #e3c581;
+      --badge-bg: #241c0e;
+      --badge-ink: #d4af6a;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #080811;
+    --surface: #121220;
+    --ink: #ede9e0;
+    --muted: #9f9aac;
+    --border: #26243a;
+    --accent: #d4af6a;
+    --accent-ink: #e8c98a;
+    --todo-bg: #241c0e;
+    --todo-border: #6b4f1e;
+    --todo-ink: #e3c581;
+    --badge-bg: #241c0e;
+    --badge-ink: #d4af6a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    margin: 0;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  .doc {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 3rem clamp(1.5rem, 5vw, 4rem) 3.5rem;
+  }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--badge-ink);
+    background: var(--badge-bg);
+    border: 1px solid var(--todo-border);
+    border-radius: 999px;
+    padding: 0.35em 0.9em;
+    margin-bottom: 1.75rem;
+  }
+
+  .status::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-size: clamp(1.9rem, 5vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.4rem;
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--muted);
+    margin: 0 0 2.75rem;
+    max-width: 46ch;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 0.9rem 0;
+    margin: 0 0 2.75rem;
+  }
+
+  .meta strong { color: var(--ink); font-weight: 600; }
+
+  section { margin: 0 0 2.5rem; }
+  section:last-of-type { margin-bottom: 0; }
+
+  .num {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 0.35rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h2 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-size: 1.28rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+    text-wrap: balance;
+  }
+
+  p { margin: 0 0 0.9rem; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 0.9rem; padding-left: 1.25rem; max-width: 60ch; }
+  li { margin-bottom: 0.5rem; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+
+  .todo {
+    display: block;
+    background: var(--todo-bg);
+    border: 1px solid var(--todo-border);
+    border-radius: 6px;
+    padding: 0.7rem 0.9rem;
+    margin-top: 0.6rem;
+    font-size: 0.88rem;
+    color: var(--todo-ink);
+  }
+
+  .todo-tag {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-right: 0.5em;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.75rem 0;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  a { color: var(--accent-ink); }
+</style>
+</head>
+<body>
+<div class="doc">
+  <span class="status">Bozza &mdash; in revisione</span>
+
+  <h1>Informativa sulla privacy</h1>
+  <p class="subtitle">Eunomia &mdash; applicazione gestionale messa a disposizione gratuitamente per prenotazioni, clienti e calendario. Nessun canone, nessun rapporto commerciale: ogni attivit&agrave; resta padrona dei propri dati.</p>
+
+  <div class="meta">
+    <span>Versione: <strong>bozza di lavoro</strong></span>
+    <span>Ultimo aggiornamento: <strong>da definire alla pubblicazione</strong></span>
+    <span>Ambito: <strong>solo Android</strong></span>
+  </div>
+
+  <section>
+    <span class="num">1</span>
+    <h2>Chi tratta i dati e con quale ruolo</h2>
+    <p>Eunomia &egrave; un'app messa a disposizione gratuitamente da <strong>[DA COMPILARE &mdash; nome/e-mail dello sviluppatore]</strong> ad alcune attivit&agrave; per la gestione delle proprie prenotazioni, del proprio calendario e dei propri clienti. Non esiste alcun canone, corrispettivo o contratto di fornitura a pagamento: l'app viene condivisa a titolo gratuito, senza rapporto commerciale o di lavoro tra lo sviluppatore e le attivit&agrave; che la usano.</p>
+    <p><strong>Ogni attivit&agrave; resta unica titolare dei dati che gestisce tramite l'app</strong> &mdash; i propri account operatore, i propri clienti finali, le proprie prenotazioni: decide quali dati raccogliere e a quale scopo, e nessun'altra attivit&agrave; pu&ograve; in alcun modo accedervi. Questo controllo si esercita per&ograve; solo <em>all'interno dell'app</em>: i dati non sono esportabili n&eacute; riutilizzabili in autonomia al di fuori di essa, n&eacute; da parte degli amministratori delle attivit&agrave; n&eacute; da parte di terzi. Chi necessiti dei propri dati per una finalit&agrave; esterna all'app (ad es. cessazione dell'utilizzo, obblighi di legge) pu&ograve; farne richiesta allo sviluppatore, che la valuta caso per caso.</p>
+    <p>Lo sviluppatore fornisce solo l'infrastruttura tecnica (l'app e l'hosting del database) e agisce in questo ruolo come <em>responsabile del trattamento</em> per conto di ciascuna attivit&agrave;, non come titolare dei dati inseriti nell'app.</p>
+    <span class="todo"><span class="todo-tag">Da compilare</span>Nome/recapito email dello sviluppatore, da inserire anche nella sezione Contatti. Consigliato comunque un accordo scritto, anche informale, con ciascuna attivit&agrave; che chiarisca questo ruolo &mdash; il GDPR non richiede un contratto oneroso, ma un accordo verificabile aiuta in caso di controllo.</span>
+  </section>
+
+  <section>
+    <span class="num">2</span>
+    <h2>Dati raccolti</h2>
+    <p>L'app raccoglie ed elabora le seguenti categorie di dati:</p>
+    <ul>
+      <li><strong>Dati di autenticazione</strong> &mdash; indirizzo email e, se si accede tramite Google Sign-In, l'identificativo dell'account Google e il nome associato. La password dell'account Google non viene mai raccolta n&eacute; memorizzata.</li>
+      <li><strong>Dati dell'account operatore/amministratore</strong> &mdash; email, ruolo (admin/super-admin), categorie di servizio assegnate.</li>
+      <li><strong>Dati gestionali inseriti dall'operatore per conto dell'attivit&agrave;</strong> &mdash; nome, telefono, email e data di nascita dei clienti dell'attivit&agrave;; dettagli delle prenotazioni (data, ora, servizio, operatore assegnato, note); anagrafica di operatori, servizi, categorie, orari di apertura e chiusure straordinarie.</li>
+      <li><strong>Dati tecnici minimi</strong> &mdash; nessun identificativo pubblicitario, nessun tracciamento a fini di profilazione.</li>
+    </ul>
+    <span class="todo"><span class="todo-tag">Da aggiornare</span>Quando verranno introdotte le push notification: aggiungere il token del dispositivo, raccolto per l'invio di notifiche relative a prenotazioni/eventi del proprio tenant.</span>
+    <p>Eunomia non tratta categorie particolari di dati (art. 9 GDPR: salute, origine etnica, opinioni politiche/religiose, ecc.) n&eacute; dati relativi a condanne penali o reati (art. 10 GDPR). Non vengono effettuate profilazioni n&eacute; decisioni automatizzate ai sensi dell'art. 22 GDPR: nessun dato viene usato per generare punteggi, valutazioni o decisioni automatiche sulle persone.</p>
+  </section>
+
+  <section>
+    <span class="num">3</span>
+    <h2>Finalit&agrave; del trattamento</h2>
+    <p>I dati sono trattati esclusivamente per:</p>
+    <ul>
+      <li>consentire l'accesso sicuro all'app (autenticazione);</li>
+      <li>fornire le funzionalit&agrave; gestionali dell'app (calendario, prenotazioni, CRM clienti, statistiche) all'interno dell'attivit&agrave; (tenant) a cui l'operatore appartiene;</li>
+      <li>garantire la corretta separazione dei dati tra le diverse attivit&agrave; clienti &mdash; ogni attivit&agrave; vede e gestisce solo i propri dati.</li>
+    </ul>
+    <p>L'app non utilizza i dati per pubblicit&agrave;, non effettua profilazione a fini di marketing e non vende n&eacute; cede dati a terzi per finalit&agrave; commerciali proprie.</p>
+  </section>
+
+  <section>
+    <span class="num">4</span>
+    <h2>Base giuridica</h2>
+    <p>Per i dati dei clienti finali che ogni attivit&agrave; inserisce nell'app (nome, telefono, email, prenotazioni), la base giuridica &egrave; scelta autonomamente dall'attivit&agrave; stessa in quanto titolare &mdash; tipicamente l'esecuzione del rapporto con il proprio cliente. Per i dati degli account operatore/amministratore, la base giuridica &egrave; l'accordo, anche informale e gratuito, tra lo sviluppatore e l'attivit&agrave; per l'uso dell'app come strumento di lavoro interno.</p>
+    <span class="todo"><span class="todo-tag">Da verificare</span>Non essendoci un contratto di fornitura a pagamento, consigliato far verificare questa impostazione (titolare/responsabile) a un consulente legale/privacy prima della pubblicazione definitiva &mdash; il GDPR non richiede un corrispettivo economico perch&eacute; si configuri un rapporto titolare/responsabile, ma va comunque documentato.</span>
+  </section>
+
+  <section>
+    <span class="num">5</span>
+    <h2>Servizi terzi utilizzati</h2>
+    <ul>
+      <li><strong>Supabase</strong> (hosting del database e autenticazione) &mdash; i dati sono conservati sui server del progetto Supabase dedicato, con accesso limitato tramite regole di sicurezza a livello di riga (Row Level Security) che isolano i dati di ciascuna attivit&agrave;.</li>
+      <li><strong>Google Sign-In</strong> (Google LLC) &mdash; utilizzato solo come metodo di autenticazione opzionale; si applica anche l'informativa privacy di Google.</li>
+    </ul>
+    <p>Nessun altro servizio di terze parti (analytics, pubblicit&agrave;, tracciamento) &egrave; integrato nell'app.</p>
+    <span class="todo"><span class="todo-tag">Da aggiornare</span>Quando verranno introdotte le push notification: aggiungere Firebase Cloud Messaging (Google) per la consegna delle notifiche push.</span>
+    <span class="todo"><span class="todo-tag">Da compilare</span>Regione geografica del progetto Supabase (i dati risiedono nell'Unione Europea o altrove?) &mdash; se fuori UE/SEE va aggiunta una clausola sul trasferimento internazionale dei dati.</span>
+  </section>
+
+  <section>
+    <span class="num">6</span>
+    <h2>Conservazione dei dati</h2>
+    <p>I dati vengono conservati finch&eacute; l'attivit&agrave; continua a utilizzare l'app. L'app non offre una funzione di esportazione self-service: i dati sono pensati per essere consultati e gestiti solo al suo interno. In caso di cessazione dell'utilizzo o per obblighi di legge, l'attivit&agrave; titolare pu&ograve; comunque richiedere allo sviluppatore una copia o la cancellazione dei propri dati.</p>
+  </section>
+
+  <section>
+    <span class="num">7</span>
+    <h2>Diritti dell'interessato</h2>
+    <p>Per i dati dei propri clienti finali, le richieste vanno indirizzate all'attivit&agrave; titolare (chi li ha raccolti tramite l'app), che li mantiene sotto il proprio controllo esclusivo. Per i dati dell'account operatore/amministratore gestito direttamente nell'app, la richiesta pu&ograve; essere indirizzata allo sviluppatore. In entrambi i casi, l'interessato ha diritto a:</p>
+    <ul>
+      <li><strong>Accesso</strong> &mdash; ottenere conferma che i propri dati sono trattati e riceverne una copia;</li>
+      <li><strong>Rettifica</strong> &mdash; correggere dati inesatti o completare dati incompleti;</li>
+      <li><strong>Cancellazione</strong> &mdash; ottenere la rimozione dei propri dati quando non sono pi&ugrave; necessari o il trattamento &egrave; illegittimo, salvo obblighi di legge che ne impongano la conservazione;</li>
+      <li><strong>Limitazione</strong> &mdash; chiedere che il trattamento sia sospeso in casi specifici (es. accuratezza dei dati contestata);</li>
+      <li><strong>Opposizione</strong> &mdash; opporsi in qualsiasi momento al trattamento;</li>
+      <li><strong>Portabilit&agrave;</strong> &mdash; ricevere i propri dati personali in un formato strutturato e leggibile, nei limiti descritti alla sezione 1 e 6 (i dati sono utilizzabili solo all'interno dell'app; l'esportazione per usi esterni va richiesta allo sviluppatore/all'attivit&agrave; titolare);</li>
+      <li><strong>Reclamo</strong> &mdash; presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>) se si ritiene che il trattamento violi il GDPR.</li>
+    </ul>
+    <span class="todo"><span class="todo-tag">Da compilare</span>Email di contatto dedicata alle richieste privacy.</span>
+  </section>
+
+  <section>
+    <span class="num">8</span>
+    <h2>Sicurezza e isolamento tra attivit&agrave;</h2>
+    <p>L'accesso ai dati &egrave; protetto da autenticazione e da regole di autorizzazione (Row Level Security) che isolano ogni attivit&agrave; dalle altre a livello di database: un'attivit&agrave; pu&ograve; vedere e gestire esclusivamente i propri dati, mai quelli di un'altra attivit&agrave; che usa la stessa app, secondo il ruolo assegnato a ciascun account.</p>
+  </section>
+
+  <section>
+    <span class="num">9</span>
+    <h2>Modifiche a questa informativa</h2>
+    <p>Questa informativa pu&ograve; essere aggiornata; la data di "Ultimo aggiornamento" in cima al documento riflette la versione corrente.</p>
+  </section>
+
+  <section>
+    <span class="num">10</span>
+    <h2>Contatti</h2>
+    <span class="todo"><span class="todo-tag">Da compilare</span>Email di contatto per domande relative a questa informativa &mdash; sar&agrave; anche l'URL da inserire nella scheda Google Play e nella sezione "Sicurezza dei dati".</span>
+  </section>
+
+  <hr class="divider" />
+
+  <footer>Bozza di lavoro &mdash; da rivedere, completare i campi evidenziati e pubblicare su un URL pubblico stabile prima della sottomissione a Google Play.</footer>
+</div>
+</body>
+</html>
