@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Cancellazione account — Eunomia</title>
+<title>Termini d&rsquo;Uso — Eunomia</title>
 <link rel="icon" href="favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -193,6 +193,30 @@
     font-size: 1.08rem;
   }
 
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 0.4em 0.9em;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--ink-soft);
+  }
+
+  .chip strong { color: var(--ink); font-weight: 700; }
+
   /* ---------- layout ---------- */
 
   .layout {
@@ -253,9 +277,7 @@
     border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
   }
 
-  .contact-card a {
-    font-weight: 700;
-  }
+  .contact-card a { font-weight: 700; }
 
   /* ---------- footer ---------- */
 
@@ -280,6 +302,8 @@
   .footer-brand img { width: 20px; height: 20px; }
 
   footer .tagline { color: var(--ink-muted); font-size: 0.82rem; }
+  footer .tagline a { margin-left: 0.75rem; }
+  footer .tagline a:first-child { margin-left: 0; }
 </style>
 </head>
 <body>
@@ -295,45 +319,79 @@
 <header class="hero" id="top">
   <img class="hero-logo" src="logo.png" alt="Eunomia" />
   <span class="eyebrow">Eunomia &middot; app gestionale</span>
-  <h1 class="display">Cancellazione dell&rsquo;account</h1>
-  <p class="hero-sub">Come richiedere la cancellazione del tuo account operatore/amministratore Eunomia e dei relativi dati.</p>
+  <h1 class="display">Termini d&rsquo;Uso</h1>
+  <p class="hero-sub">Le regole d&rsquo;uso di Eunomia per la tua attivit&agrave;: cosa puoi fare, di cosa rispondi tu, e cosa lo sviluppatore non garantisce.</p>
+  <div class="chips">
+    <span class="chip">Ultimo aggiornamento: <strong>28/08/2026</strong></span>
+  </div>
 </header>
 
 <div class="layout">
-  <p class="intro">Questa pagina si applica a chi ha un account operatore o amministratore nell&rsquo;app Eunomia (accesso con email e password oppure con Google Sign-In). Per il trattamento dei dati in generale, vedi l&rsquo;<a href="index.html">informativa sulla privacy</a>.</p>
+  <p class="intro">Questi termini si applicano a chi usa Eunomia per gestire la propria attivit&agrave; (di seguito &ldquo;il gestore&rdquo;). Integrano l&rsquo;<a href="index.html">informativa sulla privacy</a> e l&rsquo;<a href="accordo-responsabile-trattamento.html">accordo titolare&ndash;responsabile del trattamento</a>, che riguardano invece il trattamento dei dati. Si applicano automaticamente attivando o continuando a usare l&rsquo;app con un account della tua attivit&agrave; &mdash; non serve firmarli a parte.</p>
 
-  <section>
+  <section id="t1">
     <span class="num">1</span>
-    <h2>Come richiedere la cancellazione</h2>
-    <p>Puoi richiedere la cancellazione del tuo account in due modi:</p>
+    <h2>Oggetto e parti</h2>
+    <p>Eunomia &egrave; fornita gratuitamente da <strong><a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a></strong> (&ldquo;lo sviluppatore&rdquo;) ad alcune attivit&agrave; (&ldquo;il gestore&rdquo;), per gestire calendario, clienti e prenotazioni. Non c&rsquo;&egrave; alcun canone n&eacute; rapporto commerciale o di lavoro tra le parti: l&rsquo;app &egrave; condivisa liberamente, cos&igrave; com&rsquo;&egrave;.</p>
+  </section>
+
+  <section id="t2">
+    <span class="num">2</span>
+    <h2>Natura dello strumento</h2>
+    <p>Eunomia &egrave; uno strumento tecnico di gestione: mette a disposizione calendario, anagrafica clienti e prenotazioni, e ospita i relativi dati. Lo sviluppatore non partecipa all&rsquo;attivit&agrave; del gestore, non la supervisiona e non garantisce in alcun modo i rapporti tra il gestore e i propri clienti finali &mdash; questi restano interamente affari del gestore.</p>
+  </section>
+
+  <section id="t3">
+    <span class="num">3</span>
+    <h2>Responsabilit&agrave; del gestore</h2>
+    <p>Il gestore &egrave; l&rsquo;unico responsabile:</p>
     <ul>
-      <li><strong>Dall&rsquo;app</strong> &mdash; apri il men&ugrave; laterale e tocca &ldquo;Richiedi cancellazione account&rdquo; in fondo, poi conferma.</li>
-      <li><strong>Via email</strong> &mdash; scrivi a <a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a> indicando l&rsquo;indirizzo email del tuo account, richiedendo la cancellazione.</li>
+      <li>della liceit&agrave; della propria attivit&agrave; e del rispetto degli obblighi che ne derivano (fiscali, consumeristici, di settore);</li>
+      <li>dell&rsquo;esattezza e correttezza dei dati che inserisce nell&rsquo;app, propri e dei propri clienti;</li>
+      <li>dei rapporti con i propri clienti finali, comprese eventuali controversie.</li>
+    </ul>
+    <p>Per il trattamento dei dati personali dei clienti, vale in aggiunta quanto previsto dall&rsquo;<a href="accordo-responsabile-trattamento.html">accordo titolare&ndash;responsabile del trattamento</a>, dove il gestore &egrave; titolare del trattamento.</p>
+  </section>
+
+  <section id="t4">
+    <span class="num">4</span>
+    <h2>Usi vietati</h2>
+    <p>Usando Eunomia il gestore si impegna a non:</p>
+    <ul>
+      <li>svolgere tramite l&rsquo;app attivit&agrave; illecite o non autorizzate;</li>
+      <li>inserire dati falsi o riguardanti persone che non hanno acconsentito a esservi inseriti;</li>
+      <li>tentare di aggirare l&rsquo;isolamento tra le diverse attivit&agrave; che usano l&rsquo;app o comunque comprometterne la sicurezza.</li>
     </ul>
   </section>
 
-  <section>
-    <span class="num">2</span>
-    <h2>Cosa viene cancellato</h2>
-    <p>La richiesta comporta la cancellazione dei tuoi <strong>dati di autenticazione</strong> (email, credenziali di accesso, identificativo Google se usato) e del tuo <strong>account operatore/amministratore</strong> (ruolo e categorie assegnate) dal sistema.</p>
-  </section>
-
-  <section>
-    <span class="num">3</span>
-    <h2>Cosa non viene cancellato</h2>
-    <p>I dati gestionali della tua attivit&agrave; &mdash; clienti, prenotazioni, servizi, operatori, orari &mdash; restano di propriet&agrave; dell&rsquo;attivit&agrave; (titolare del trattamento) e <strong>non vengono cancellati</strong> dalla richiesta di cancellazione di un singolo account operatore. Per la cancellazione di questi dati va contattato direttamente il titolare dell&rsquo;attivit&agrave; oppure, se il titolare stesso richiede la cessazione dell&rsquo;attivit&agrave; sull&rsquo;app, lo sviluppatore all&rsquo;indirizzo indicato sopra.</p>
-  </section>
-
-  <section>
-    <span class="num">4</span>
-    <h2>Tempistiche</h2>
-    <p>La richiesta viene evasa entro <strong>30 giorni</strong> dalla ricezione. Dopo la cancellazione non sar&agrave; pi&ugrave; possibile accedere all&rsquo;app con quell&rsquo;account.</p>
-  </section>
-
-  <section class="contact-card">
+  <section id="t5">
     <span class="num">5</span>
+    <h2>Limitazione di responsabilit&agrave;</h2>
+    <p>Eunomia &egrave; fornita cos&igrave; com&rsquo;&egrave; (&ldquo;as-is&rdquo;), senza garanzie di continuit&agrave;, disponibilit&agrave; o assenza di errori. Trattandosi di uno strumento fornito gratuitamente, lo sviluppatore risponde con minor rigore rispetto a un rapporto a pagamento (art. 1710 c.c.) e non risponde di danni derivanti dall&rsquo;uso che il gestore fa dell&rsquo;app o dalla conduzione della sua attivit&agrave;, salvo i casi di dolo o colpa grave che la legge non consente di escludere.</p>
+  </section>
+
+  <section id="t6">
+    <span class="num">6</span>
+    <h2>Manleva</h2>
+    <p>Il gestore tiene indenne lo sviluppatore da qualsiasi pretesa, richiesta o danno che terzi (inclusi i propri clienti finali) dovessero avanzare in conseguenza dell&rsquo;uso che il gestore fa dell&rsquo;app o della propria attivit&agrave;.</p>
+  </section>
+
+  <section id="t7">
+    <span class="num">7</span>
+    <h2>Sospensione e cessazione</h2>
+    <p>Lo sviluppatore pu&ograve; sospendere o disattivare l&rsquo;account di un gestore che violi questi termini &mdash; in particolare gli usi vietati di cui alla sezione 4 &mdash; dandone comunicazione quando ragionevolmente possibile. Il gestore pu&ograve; smettere di usare l&rsquo;app in qualsiasi momento; per la sorte dei dati alla cessazione, vale quanto previsto alla sezione 8 dell&rsquo;<a href="accordo-responsabile-trattamento.html">accordo responsabile del trattamento</a>.</p>
+  </section>
+
+  <section id="t8">
+    <span class="num">8</span>
+    <h2>Modifiche</h2>
+    <p>Questi termini possono essere aggiornati; la data di &ldquo;Ultimo aggiornamento&rdquo; in cima riflette la versione corrente. L&rsquo;uso continuato dell&rsquo;app dopo un aggiornamento comporta l&rsquo;accettazione dei nuovi termini.</p>
+  </section>
+
+  <section id="t9" class="contact-card">
+    <span class="num">9</span>
     <h2>Contatti</h2>
-    <p>Per qualsiasi domanda su questa procedura: <a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a></p>
+    <p>Per qualsiasi domanda su questi termini: <a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a>.</p>
   </section>
 </div>
 
@@ -342,7 +400,7 @@
     <img src="logo.png" alt="" />
     <span>Eunomia &mdash; app gestionale per prenotazioni, clienti e calendario</span>
   </div>
-  <span class="tagline"><a href="index.html">Informativa sulla privacy</a><a href="accordo-responsabile-trattamento.html">Accordo responsabile trattamento</a><a href="termini-uso.html">Termini d'Uso</a><a href="supporto.html">Assistenza</a></span>
+  <span class="tagline"><a href="index.html">Informativa sulla privacy</a><a href="accordo-responsabile-trattamento.html">Accordo responsabile trattamento</a><a href="elimina-account.html">Cancellazione account</a><a href="supporto.html">Assistenza</a></span>
 </footer>
 
 </body>
