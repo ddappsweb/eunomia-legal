@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Assistenza — Eunomia</title>
+<title>Accordo titolare&ndash;responsabile del trattamento — Eunomia</title>
 <link rel="icon" href="favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -193,6 +193,30 @@
     font-size: 1.08rem;
   }
 
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 0.4em 0.9em;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--ink-soft);
+  }
+
+  .chip strong { color: var(--ink); font-weight: 700; }
+
   /* ---------- layout ---------- */
 
   .layout {
@@ -248,14 +272,33 @@
 
   strong { font-weight: 700; }
 
+  .todo {
+    display: block;
+    background: var(--warm-soft);
+    border: 1px solid color-mix(in srgb, var(--warm) 35%, var(--border));
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+
+  .todo-tag {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--warm-deep);
+    margin-right: 0.5em;
+  }
+
   .contact-card {
     background: var(--accent-soft);
     border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
   }
 
-  .contact-card a {
-    font-weight: 700;
-  }
+  .contact-card a { font-weight: 700; }
 
   /* ---------- footer ---------- */
 
@@ -291,42 +334,76 @@
     <img src="logo.png" alt="" />
     <span class="brand-name">Eunomia</span>
   </a>
-  <span class="nav-tag">Assistenza</span>
+  <span class="nav-tag">Documento legale</span>
 </nav>
 
 <header class="hero" id="top">
   <img class="hero-logo" src="logo.png" alt="Eunomia" />
   <span class="eyebrow">Eunomia &middot; app gestionale</span>
-  <h1 class="display">Assistenza</h1>
-  <p class="hero-sub">Domande frequenti e contatto diretto per chi usa l&rsquo;app Eunomia.</p>
+  <h1 class="display">Accordo titolare&ndash;responsabile del trattamento</h1>
+  <p class="hero-sub">Come Eunomia tratta, per conto della tua attivit&agrave;, i dati dei tuoi clienti e dei tuoi operatori (art. 28 GDPR).</p>
+  <div class="chips">
+    <span class="chip">Ultimo aggiornamento: <strong>28/08/2026</strong></span>
+  </div>
 </header>
 
 <div class="layout">
-  <p class="intro">Questa pagina raccoglie le domande più comuni su Eunomia. Per l&rsquo;informativa sul trattamento dei dati vedi la <a href="index.html">privacy policy</a>; per la cancellazione dell&rsquo;account vedi la <a href="elimina-account.html">pagina dedicata</a>.</p>
+  <p class="intro">Questo documento integra l'<a href="index.html">informativa sulla privacy</a> e riguarda il rapporto tra la tua attivit&agrave; (titolare del trattamento dei dati dei tuoi clienti e operatori) e lo sviluppatore di Eunomia (responsabile del trattamento, che fornisce l'app e l'hosting). Si applica automaticamente attivando o continuando a usare l'app con un account della tua attivit&agrave; &mdash; non serve firmarlo a parte.</p>
 
-  <section>
+  <section id="a1">
     <span class="num">1</span>
-    <h2>Non riesco ad accedere o a registrarmi</h2>
-    <p>Eunomia non prevede la registrazione autonoma dal primo avvio: l&rsquo;account viene creato dal titolare della tua attività (o da un amministratore già abilitato), che ti comunicherà email e credenziali di accesso, oppure ti abiliterà ad accedere con Google o con Sign in with Apple usando la stessa email.</p>
-    <p>Se non hai ricevuto le credenziali o non riesci comunque ad accedere, contatta prima il titolare della tua attività; se il problema persiste, scrivici (vedi sezione Contatti).</p>
+    <h2>Le parti</h2>
+    <p><strong>Titolare del trattamento</strong>: la tua attivit&agrave;, per i dati dei propri clienti finali e dei propri operatori inseriti nell'app.</p>
+    <p><strong>Responsabile del trattamento</strong>: lo sviluppatore di Eunomia, <a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a>, che fornisce l'app e ospita i dati per conto della tua attivit&agrave;, secondo le tue istruzioni.</p>
   </section>
 
-  <section>
+  <section id="a2">
     <span class="num">2</span>
-    <h2>Ho trovato un problema o un errore nell&rsquo;app</h2>
-    <p>Scrivici descrivendo cosa stavi facendo e cosa è successo, possibilmente con uno screenshot: rispondiamo il prima possibile.</p>
+    <h2>Oggetto e durata</h2>
+    <p>Lo sviluppatore tratta, per conto della tua attivit&agrave;, i dati necessari al funzionamento di Eunomia: clienti, prenotazioni, operatori, servizi e orari che inserisci nell'app. L'accordo vale per tutta la durata dell'utilizzo dell'app da parte della tua attivit&agrave; e termina alla cessazione dell'account (vedi sezione 8).</p>
   </section>
 
-  <section>
+  <section id="a3">
     <span class="num">3</span>
-    <h2>Voglio cancellare il mio account</h2>
-    <p>Puoi farlo direttamente dall&rsquo;app (menu laterale → &ldquo;Richiedi cancellazione account&rdquo;) o seguendo le istruzioni nella <a href="elimina-account.html">pagina dedicata alla cancellazione dell&rsquo;account</a>.</p>
+    <h2>Istruzioni e limiti del trattamento</h2>
+    <p>Lo sviluppatore tratta i dati solo per far funzionare le funzionalit&agrave; dell'app, secondo l'uso che ne fai (le tue istruzioni sono, in pratica, il modo in cui usi l'app). Non usa i dati della tua attivit&agrave; per scopi propri, non li vende e non li cede a terzi, salvo i sub-responsabili indicati alla sezione 5.</p>
   </section>
 
-  <section class="contact-card">
+  <section id="a4">
     <span class="num">4</span>
-    <h2>Contatti</h2>
-    <p>Per qualsiasi altra domanda: <a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a></p>
+    <h2>Misure di sicurezza</h2>
+    <p>I dati sono protetti da autenticazione e da regole di sicurezza a livello di database (Row Level Security) che isolano i dati della tua attivit&agrave; da quelli di ogni altra attivit&agrave; che usa Eunomia. I dati sono ospitati su server situati nell'Unione Europea (vedi sezione 5 dell'<a href="index.html">informativa privacy</a>).</p>
+  </section>
+
+  <section id="a5">
+    <span class="num">5</span>
+    <h2>Sub-responsabili</h2>
+    <p>Lo sviluppatore si avvale, come unico sub-responsabile, di <strong>Supabase</strong> per l'hosting del database e l'autenticazione. Eventuali nuovi sub-responsabili verranno indicati con un aggiornamento di questa pagina e dell'informativa privacy.</p>
+  </section>
+
+  <section id="a6">
+    <span class="num">6</span>
+    <h2>Violazioni dei dati (data breach)</h2>
+    <p>In caso di violazione dei dati che riguarda la tua attivit&agrave;, lo sviluppatore te lo comunica senza ingiustificato ritardo &mdash; indicativamente entro 48 ore da quando ne viene a conoscenza &mdash; fornendo le informazioni disponibili, cos&igrave; da permetterti di adempiere ai tuoi obblighi verso i tuoi clienti e, se necessario, verso il Garante (art. 33&ndash;34 GDPR).</p>
+  </section>
+
+  <section id="a7">
+    <span class="num">7</span>
+    <h2>Assistenza alla tua attivit&agrave;</h2>
+    <p>Lo sviluppatore ti supporta, nei limiti di quanto tecnicamente disponibile nell'app, per rispondere alle richieste dei tuoi clienti che esercitano i propri diritti (accesso, cancellazione, ecc.) e in eventuali verifiche del Garante che riguardano i dati trattati tramite Eunomia.</p>
+  </section>
+
+  <section id="a8">
+    <span class="num">8</span>
+    <h2>Cessazione</h2>
+    <p>Quando la tua attivit&agrave; smette di usare l'app, lo sviluppatore cancella i dati trattati per tuo conto, oppure te ne restituisce una copia se la richiedi prima della cancellazione, salvo obblighi di legge che ne impongano la conservazione.</p>
+  </section>
+
+  <section id="a9" class="contact-card">
+    <span class="num">9</span>
+    <h2>Come si accetta, come si revoca</h2>
+    <p>Attivando o continuando a usare Eunomia con un account della tua attivit&agrave;, accetti questo accordo. Per revocarlo, per chiarimenti, o per richiedere l'accordo in un formato firmabile separatamente: <a href="mailto:ddappsweb@gmail.com">ddappsweb@gmail.com</a>.</p>
+    <span class="todo"><span class="todo-tag">Da verificare</span>Questa &egrave; una bozza preparata senza revisione di un legale. Prima di considerarla vincolante a tutti gli effetti, consigliato farla verificare da un consulente legale/privacy &mdash; in particolare l'adeguatezza dell'accettazione "per comportamento concludente" invece di una firma esplicita.</span>
   </section>
 </div>
 
@@ -335,7 +412,7 @@
     <img src="logo.png" alt="" />
     <span>Eunomia &mdash; app gestionale per prenotazioni, clienti e calendario</span>
   </div>
-  <span class="tagline"><a href="index.html">Informativa sulla privacy</a><a href="accordo-responsabile-trattamento.html">Accordo responsabile trattamento</a><a href="elimina-account.html">Cancellazione account</a></span>
+  <span class="tagline"><a href="index.html">Informativa sulla privacy</a><a href="elimina-account.html">Cancellazione account</a><a href="supporto.html">Assistenza</a></span>
 </footer>
 
 </body>
